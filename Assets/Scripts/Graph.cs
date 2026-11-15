@@ -47,7 +47,7 @@ public class Graph : MonoBehaviour
             {
                         
             bars[i].transform.position = Vector3.Lerp(leftBound.position,rightBound.position,i/listLength);
-            bars[i].transform.GetChild(0).position = new Vector3(bars[i].transform.position.x,lowerBound.position.y +(bars[i].transform.GetChild(0).localScale.y/2*heightScale), bars[i].transform.position.z);
+            bars[i].transform.GetChild(0).position = new Vector3(bars[i].transform.position.x,lowerBound.position.y +(bars[i].transform.GetChild(0).localScale.y/2*heightScale),transform.position.z);
 
             
             float graphWidth = Vector3.Distance(leftBound.position, rightBound.position);
