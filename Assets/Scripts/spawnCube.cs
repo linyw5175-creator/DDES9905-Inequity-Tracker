@@ -16,7 +16,7 @@ public class SpawnCube : MonoBehaviour
     public void SpawnMoney()
     {
         int valueAmount = baseValue + incrementValue* cubeNumber;
-        float cubeValue = Mathf.Round(valueAmount * inequityAdjustment);
+        int cubeValue = Mathf.RoundToInt(valueAmount * inequityAdjustment);
         GameObject spawnedCube = Instantiate(moneyCube,transform.position,Quaternion.identity);
         spawnedCube.GetComponent<MoneyValue>().SetValue(cubeValue);
         spawnedCube.GetComponentInChildren<ValueText>().SetValueText(cubeValue);

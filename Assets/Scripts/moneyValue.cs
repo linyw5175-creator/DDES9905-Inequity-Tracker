@@ -10,7 +10,7 @@ public class MoneyValue : MonoBehaviour
 
         if (valueAmount <= 0)
         {
-            valueAmount = 1;
+            valueAmount = 0;
         }
 
         if(1 <= valueAmount && valueAmount <= 5000)
