@@ -15,6 +15,7 @@ public class inequitylabel : MonoBehaviour
     void Start()
     {
         text = GetComponent<TextMeshPro>();
+        text.text = "";
     }
 
 
