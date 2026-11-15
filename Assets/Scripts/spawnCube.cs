@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class SpawnCube : MonoBehaviour
 {
@@ -15,9 +15,9 @@ public class SpawnCube : MonoBehaviour
     }
     public void SpawnMoney()
     {
-        int valueAmount = baseValue + incrementValue* cubeNumber;
+        int valueAmount = baseValue + incrementValue * cubeNumber;
         float cubeValue = Mathf.Round(valueAmount * inequityAdjustment);
-        GameObject spawnedCube = Instantiate(moneyCube,transform.position,Quaternion.identity);
+        GameObject spawnedCube = Instantiate(moneyCube, transform.position, Quaternion.identity);
         spawnedCube.GetComponent<MoneyValue>().SetValue(cubeValue);
         spawnedCube.GetComponentInChildren<ValueText>().SetValueText(cubeValue);
         cubeNumber++;
