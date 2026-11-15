@@ -67,6 +67,6 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "DDES9905 Inequity Tracker.slnx",
+    "dotnet.defaultSolution": "DDES9905-Inequity-Tracker.slnx",
     "dotnet.enableWorkspaceBasedDevelopment": false
 }
