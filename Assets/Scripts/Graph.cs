@@ -23,6 +23,8 @@ public class Graph : MonoBehaviour
 
     [SerializeField] private Color barColor;
 
+    [SerializeField] private Transform balanceLabel;
+
 
     void Start()
     {
@@ -57,7 +59,11 @@ public class Graph : MonoBehaviour
                 float spacing = xScaleMultiplier * 0.1f;
                 bars[i].transform.localScale = new Vector3(xScaleMultiplier-spacing, bars[i].transform.localScale.y, bars[i].transform.localScale.z);
                 }
+
+            
             }
+
+            
 
     
 
