@@ -9251,7 +9251,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   popups:
   - popupText: {fileID: 536645837}
-    popupTime: 3
+    popupTime: 5
     requireAnswer: 1
   - popupText: {fileID: 1846459352}
     popupTime: 46
