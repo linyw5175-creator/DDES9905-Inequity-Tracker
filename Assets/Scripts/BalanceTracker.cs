@@ -13,6 +13,7 @@ public class BalanceTracker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        text.text = "Total Deposited: $" + balance.currentBalance.ToString() + "\nWith Interest: $"+balance.withInterest.ToString();
+        text.text = "Total Deposited: $" + balance.currentBalance.ToString() ;
+        //+ "\nWith Interest: $"+balance.withInterest.ToString()
     }
 }

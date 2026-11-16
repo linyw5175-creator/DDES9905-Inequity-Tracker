@@ -19,6 +19,7 @@ public class Graph : MonoBehaviour
     public bool controlCompare;
     [SerializeField] private Graph billionaireGraph;
     [SerializeField] private Graph controlGraph;
+    [SerializeField] private Graph inequityGraph;
     private List<GameObject> bars = new List<GameObject>();
 
     [SerializeField] private Color barColor;
@@ -101,5 +102,19 @@ public class Graph : MonoBehaviour
             
             transform.localScale = new Vector3(1,heightScale,1);
 
+    }
+
+    void OnEnable()
+    {
+        if(billionaireGraph == this)
+        {
+            controlGraph.billionaireCompare = true;
+            inequityGraph.billionaireCompare = true;
+        }
+
+        if(controlGraph == this)
+        {
+            inequityGraph.controlCompare = true;
+        }
     }
 }
