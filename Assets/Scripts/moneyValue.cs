@@ -12,7 +12,7 @@ public class MoneyValue : MonoBehaviour
         {
             valueAmount = 0;
         }
-
+/*
         if(1 <= valueAmount && valueAmount <= 5000)
         {
             transform.localScale = new Vector3(.05f,.05f,.05f);
@@ -24,6 +24,6 @@ public class MoneyValue : MonoBehaviour
         if(valueAmount > 150000)
             {
                 transform.localScale = new Vector3(1.5f,1.5f,1.5f);
-            }
+            }*/
     }
 }
